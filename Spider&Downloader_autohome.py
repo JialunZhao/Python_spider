@@ -55,6 +55,8 @@ DB = pymysql.Connect(
 # 获取游标
 cursor = DB.cursor()
 
+# 目标页面链接获取函数
+
 
 def get_url(host_url, url_index):
     # 爬虫抓取部分
@@ -96,7 +98,7 @@ def get_url(host_url, url_index):
                     url_index = url_index + 1
     return url_index
 
-# 爬取图片函数
+# 爬取图片链接并下载
 
 
 def get_img(url_id, host_title, host_url):
